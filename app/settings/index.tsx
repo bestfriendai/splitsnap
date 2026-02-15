@@ -1,8 +1,8 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert, Switch } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { colors, spacing, radius, fontSize, fontWeight, shadows } from '../src/theme';
-import { getPremiumStatus } from '../src/services/storage';
+import { colors, spacing, radius, fontSize, fontWeight, shadows } from '../../src/theme';
+import { getPremiumStatus } from '../../src/services/storage';
 
 interface SettingRowProps {
   icon: string;

@@ -53,6 +53,30 @@ app/
 - Export history
 - Priority support
 
+## API Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Split Payment API (for bill splitting features)
+SPLIT_API_KEY=your_split_api_key
+SPLIT_API_URL=https://api.splitsnap.com/v1
+
+# Payment Processing (optional)
+PAYMENT_API_KEY=your_payment_api_key
+```
+
+### RevenueCat Configuration
+
+1. Create an account at [RevenueCat.com](https://revenuecat.com)
+2. Create products in App Store Connect / Google Play Console:
+   - Monthly: $2.99/month - `splitsnap_monthly`
+   - Annual: $14.99/year - `splitsnap_annual`
+3. Configure products in RevenueCat dashboard
+4. Add your API key to the purchases service
+
 ## License
 
 MIT

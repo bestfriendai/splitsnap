@@ -40,7 +40,7 @@ export default function GroupDetailScreen() {
       'Enter member name',
       [
         { text: 'Cancel', style: 'cancel' },
-        { text: 'Add', onPress: (name) => {
+        { text: 'Add', onPress: (name: string | undefined) => {
           if (name?.trim() && group) {
             // Would save to group - simplified for demo
             loadGroup();

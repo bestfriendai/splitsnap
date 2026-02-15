@@ -25,7 +25,7 @@ export default function GroupsScreen() {
         { text: 'Cancel', style: 'cancel' },
         { 
           text: 'Create', 
-          onPress: async (name) => {
+          onPress: async (name: string | undefined) => {
             if (name?.trim()) {
               // Group creation handled in storage
               loadData();
